@@ -10,5 +10,16 @@
 	"default_popup":"popup.html"
 },
 
+"background": {
+	"scripts": ["scripts/background.js"]
+},
+
+"content_scripts":[
+	{
+		"matches":["<all_urls>"],
+		"js":["scripts/content.js"]
+	}
+],
+
 "permissions":[]
 }
